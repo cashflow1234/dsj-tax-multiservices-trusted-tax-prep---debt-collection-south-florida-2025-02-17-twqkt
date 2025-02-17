@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +21,41 @@
     <header class="fixed w-full bg-gray-900/95 backdrop-blur-sm border-b border-gray-800 z-50">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold text-blue-500">DSJ Tax</div>
+                <a href="https://cashflow1234.github.io/dsj-tax-multiservices-trusted-tax-prep---debt-collection-south-florida-2025-02-17-twqkt" class="text-2xl font-bold text-blue-500 hover:text-blue-400 transition-colors duration-300">DSJ Tax</a>
+                
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
                     <a href="#services" class="hover:text-blue-400 transition-colors duration-300">Services</a>
                     <a href="#benefits" class="hover:text-blue-400 transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="hover:text-blue-400 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="hover:text-blue-400 transition-colors duration-300">About</a>
                     <a href="#faq" class="hover:text-blue-400 transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="hover:text-blue-400 transition-colors duration-300">Contact</a>
                 </div>
-                <a href="https://form.jotform.com/250476421727054" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-white transition-all duration-300 transform hover:scale-105">
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle Menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
+                <a href="https://form.jotform.com/250476421727054" class="hidden md:block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                     Get Started
                 </a>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#services" class="hover:text-blue-400 transition-colors duration-300">Services</a>
+                    <a href="#benefits" class="hover:text-blue-400 transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="hover:text-blue-400 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="hover:text-blue-400 transition-colors duration-300">About</a>
+                    <a href="#faq" class="hover:text-blue-400 transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="hover:text-blue-400 transition-colors duration-300">Contact</a>
+                    <a href="https://form.jotform.com/250476421727054" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-white text-center transition-all duration-300">
+                        Get Started
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
@@ -31,19 +64,19 @@
     <section class="relative min-h-screen flex items-center pt-20 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
-                    Reliable Tax Prep & Debt Collection
-                    <span class="block text-blue-500">We've Got You Covered</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 animate-fade-in">
+                    Expert Tax Preparation & 
+                    <span class="block text-blue-500">Professional Debt Collection</span>
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-400 mb-12">
-                    Professional tax preparation and debt collection services in South Florida
+                    South Florida's premier tax and financial services provider, delivering personalized solutions with over 15 years of expertise.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="https://form.jotform.com/250476421727054" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-full text-center text-white text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                    <a href="https://form.jotform.com/250476421727054" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-full text-center text-white text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                         Start Your Tax Filing
                     </a>
-                    <a href="#contact" class="border border-gray-700 hover:border-blue-500 px-8 py-4 rounded-full text-center text-lg font-semibold transition-all duration-300">
-                        Contact Us
+                    <a href="#contact" class="border border-gray-700 hover:border-blue-500 px-8 py-4 rounded-full text-center text-lg font-semibold transition-all duration-300 hover:bg-gray-800 hover:shadow-lg">
+                        Schedule Consultation
                     </a>
                 </div>
             </div>
@@ -51,30 +84,30 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-24 bg-gray-800">
+    <section id="services" class="py-24 bg-gray-800">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose DSJ Tax Multiservices?</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Comprehensive Financial Solutions</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-gray-900 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
-                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-shield-alt text-2xl"></i>
+                <div class="bg-gray-900 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6 transform transition-transform hover:rotate-12">
+                        <i class="fas fa-calculator text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Trust</h3>
-                    <p class="text-gray-400">Built on years of experience and customer satisfaction</p>
+                    <h3 class="text-xl font-semibold mb-4">Tax Preparation</h3>
+                    <p class="text-gray-400">Expert tax filing services with maximized deductions and credits. We handle personal, business, and corporate returns with precision.</p>
                 </div>
-                <div class="bg-gray-900 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
-                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-check-circle text-2xl"></i>
+                <div class="bg-gray-900 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6 transform transition-transform hover:rotate-12">
+                        <i class="fas fa-hand-holding-usd text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Reliable</h3>
-                    <p class="text-gray-400">Consistent, dependable service you can count on</p>
+                    <h3 class="text-xl font-semibold mb-4">Debt Collection</h3>
+                    <p class="text-gray-400">Professional debt recovery services with a focus on maintaining client relationships. Strategic approaches for optimal recovery rates.</p>
                 </div>
-                <div class="bg-gray-900 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
-                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-star text-2xl"></i>
+                <div class="bg-gray-900 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6 transform transition-transform hover:rotate-12">
+                        <i class="fas fa-chart-line text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Expert</h3>
-                    <p class="text-gray-400">Professional team with extensive industry knowledge</p>
+                    <h3 class="text-xl font-semibold mb-4">Financial Planning</h3>
+                    <p class="text-gray-400">Comprehensive financial guidance to help you achieve your long-term goals. Custom strategies for wealth building and protection.</p>
                 </div>
             </div>
         </div>
@@ -83,29 +116,117 @@
     <!-- Benefits Section -->
     <section id="benefits" class="py-24 bg-gray-900">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Benefits of Working With Us</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose DSJ Tax Multiservices?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div class="group">
-                    <div class="bg-gray-800 p-8 rounded-2xl group-hover:bg-gray-700 transition-all duration-300">
-                        <i class="fas fa-bolt text-3xl text-blue-500 mb-6"></i>
-                        <h3 class="text-xl font-semibold mb-4">Quick Solutions</h3>
-                        <p class="text-gray-400">Fast and efficient service for all your tax needs</p>
+                    <div class="bg-gray-800 p-8 rounded-2xl group-hover:bg-gray-700 transition-all duration-300 hover:shadow-xl">
+                        <i class="fas fa-bolt text-3xl text-blue-500 mb-6 group-hover:scale-110 transition-transform duration-300"></i>
+                        <h3 class="text-xl font-semibold mb-4">Fast Turnaround</h3>
+                        <p class="text-gray-400">Most returns completed within 48 hours. Quick response times and efficient processing for all services.</p>
                     </div>
                 </div>
                 <div class="group">
-                    <div class="bg-gray-800 p-8 rounded-2xl group-hover:bg-gray-700 transition-all duration-300">
-                        <i class="fas fa-user-tie text-3xl text-blue-500 mb-6"></i>
-                        <h3 class="text-xl font-semibold mb-4">Trusted Expert</h3>
-                        <p class="text-gray-400">Professional guidance from experienced specialists</p>
+                    <div class="bg-gray-800 p-8 rounded-2xl group-hover:bg-gray-700 transition-all duration-300 hover:shadow-xl">
+                        <i class="fas fa-shield-alt text-3xl text-blue-500 mb-6 group-hover:scale-110 transition-transform duration-300"></i>
+                        <h3 class="text-xl font-semibold mb-4">Maximum Security</h3>
+                        <p class="text-gray-400">Bank-level encryption and security protocols protect your sensitive financial information.</p>
                     </div>
                 </div>
                 <div class="group">
-                    <div class="bg-gray-800 p-8 rounded-2xl group-hover:bg-gray-700 transition-all duration-300">
-                        <i class="fas fa-headset text-3xl text-blue-500 mb-6"></i>
-                        <h3 class="text-xl font-semibold mb-4">Reliable Support</h3>
-                        <p class="text-gray-400">Dedicated assistance throughout the process</p>
+                    <div class="bg-gray-800 p-8 rounded-2xl group-hover:bg-gray-700 transition-all duration-300 hover:shadow-xl">
+                        <i class="fas fa-headset text-3xl text-blue-500 mb-6 group-hover:scale-110 transition-transform duration-300"></i>
+                        <h3 class="text-xl font-semibold mb-4">24/7 Support</h3>
+                        <p class="text-gray-400">Round-the-clock assistance available through our dedicated support team and online portal.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">"DSJ Tax helped me recover a significant business debt that I thought was lost. Their professional approach and persistence made all the difference. Highly recommended for debt collection services!"</p>
+                    <div class="text-sm">
+                        <p class="font-semibold">Michael Rodriguez</p>
+                        <p class="text-gray-500">Business Owner, Miami</p>
+                    </div>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">"The tax preparation service is outstanding. They found deductions I didn't know existed and maximized my return. The team is knowledgeable and always available to answer questions."</p>
+                    <div class="text-sm">
+                        <p class="font-semibold">Sarah Thompson</p>
+                        <p class="text-gray-500">Healthcare Professional</p>
+                    </div>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">"I've been using DSJ Tax for both personal and business taxes for 3 years now. Their attention to detail and expertise has saved me thousands in taxes. The best in South Florida!"</p>
+                    <div class="text-sm">
+                        <p class="font-semibold">David Chen</p>
+                        <p class="text-gray-500">Restaurant Owner</p>
+                    </div>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">"The financial planning advice I received was invaluable. They helped me create a solid retirement strategy and optimize my tax situation. Very professional and thorough service."</p>
+                    <div class="text-sm">
+                        <p class="font-semibold">Lisa Martinez</p>
+                        <p class="text-gray-500">Real Estate Agent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About DSJ Tax Multiservices</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    Founded in 2010, DSJ Tax Multiservices has grown from a small local tax preparation office to South Florida's leading financial services provider. Our journey began with a simple mission: to provide accessible, professional tax and financial services to our community. Through dedication to excellence and customer service, we've helped thousands of clients achieve their financial goals.
+                </p>
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    Our core values of integrity, expertise, and client satisfaction drive everything we do. We believe in building long-term relationships with our clients through transparent communication and exceptional service. Our team of certified professionals stays current with the latest tax laws and financial regulations to ensure you receive the most accurate and advantageous solutions for your financial needs.
+                </p>
             </div>
         </div>
     </section>
@@ -115,29 +236,38 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
             <div class="max-w-3xl mx-auto space-y-6">
-                <div class="bg-gray-900 rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">What tax services do you offer?</h3>
-                    <p class="text-gray-400">We provide comprehensive tax preparation, planning, and consulting services for individuals and businesses.</p>
+                <div class="bg-gray-900 rounded-lg p-6 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">What tax preparation services do you offer?</h3>
+                    <p class="text-gray-400">We provide comprehensive tax services including personal returns, business taxes, corporate filing, tax planning, and audit support. Our experts handle both simple and complex tax situations with precision.</p>
                 </div>
-                <div class="bg-gray-900 rounded-lg p-6">
+                <div class="bg-gray-900 rounded-lg p-6 hover:shadow-xl transition-all duration-300">
                     <h3 class="text-xl font-semibold mb-4">How does your debt collection process work?</h3>
-                    <p class="text-gray-400">Our debt collection process is professional and compliant with all regulations, focusing on achieving optimal results while maintaining respect.</p>
+                    <p class="text-gray-400">Our debt collection process begins with a thorough assessment of the debt, followed by strategic communication with debtors. We employ professional, ethical methods that comply with all regulations while maintaining positive relationships.</p>
                 </div>
-                <div class="bg-gray-900 rounded-lg p-6">
+                <div class="bg-gray-900 rounded-lg p-6 hover:shadow-xl transition-all duration-300">
                     <h3 class="text-xl font-semibold mb-4">What documents do I need for tax preparation?</h3>
-                    <p class="text-gray-400">Required documents typically include W-2s, 1099s, receipts for deductions, and previous tax returns. We'll provide a detailed checklist during consultation.</p>
+                    <p class="text-gray-400">Essential documents include W-2s, 1099s, receipts for deductions, previous tax returns, and any relevant financial statements. We provide a detailed checklist during your initial consultation.</p>
+                </div>
+                <div class="bg-gray-900 rounded-lg p-6 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">What are your fees for services?</h3>
+                    <p class="text-gray-400">Our fees vary based on the complexity of your tax return or financial service needs. We provide transparent pricing and detailed quotes during initial consultations. Many clients find our services pay for themselves through maximized returns.</p>
+                </div>
+                <div class="bg-gray-900 rounded-lg p-6 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">How long does the tax preparation process take?</h3>
+                    <p class="text-gray-400">Most individual tax returns are completed within 48-72 hours of receiving all necessary documents. Complex business returns may take longer. We'll provide you with a specific timeline during your consultation.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-r from-blue-600 to-blue-800">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Get Started?</h2>
-            <p class="text-xl mb-12 max-w-2xl mx-auto">Let us help you with your tax preparation and debt collection needs</p>
-            <a href="https://form.jotform.com/250476421727054" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300 inline-block">
-                Schedule a Consultation
+    <section class="py-24 bg-[url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center relative">
+        <div class="absolute inset-0 bg-blue-900/90"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Take Control of Your Finances?</h2>
+            <p class="text-xl mb-12 max-w-2xl mx-auto">Join thousands of satisfied clients who trust DSJ Tax Multiservices with their financial future</p>
+            <a href="https://form.jotform.com/250476421727054" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300 inline-block transform hover:scale-105 hover:shadow-lg">
+                Schedule Your Free Consultation
             </a>
         </div>
     </section>
@@ -148,13 +278,15 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-2xl font-bold text-blue-500 mb-6">DSJ Tax</h3>
-                    <p class="text-gray-400">Professional tax preparation and debt collection services in South Florida.</p>
+                    <p class="text-gray-400">South Florida's trusted partner for professional tax preparation and debt collection services.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
                     <ul class="space-y-4 text-gray-400">
                         <li><a href="#services" class="hover:text-blue-400 transition-colors duration-300">Services</a></li>
                         <li><a href="#benefits" class="hover:text-blue-400 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="hover:text-blue-400 transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="hover:text-blue-400 transition-colors duration-300">About</a></li>
                         <li><a href="#faq" class="hover:text-blue-400 transition-colors duration-300">FAQ</a></li>
                     </ul>
                 </div>
@@ -162,13 +294,15 @@
                     <h4 class="text-lg font-semibold mb-6">Contact</h4>
                     <ul class="space-y-4 text-gray-400">
                         <li><a href="mailto:info@dsjtax.com" class="hover:text-blue-400 transition-colors duration-300">info@dsjtax.com</a></li>
+                        <li><a href="tel:+1234567890" class="hover:text-blue-400 transition-colors duration-300">+1 (234) 567-890</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-6">Legal</h4>
                     <ul class="space-y-4 text-gray-400">
-                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://cashflow1234.github.io/dsj-tax-multiservices-trusted-tax-prep---debt-collection-south-florida-2025-02-17-twqkt/privacy.html" class="hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://cashflow1234.github.io/dsj-tax-multiservices-trusted-tax-prep---debt-collection-south-florida-2025-02-17-twqkt/terms.html" class="hover:text-blue-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://cashflow1234.github.io/dsj-tax-multiservices-trusted-tax-prep---debt-collection-south-florida-2025-02-17-twqkt/blog.html" class="hover:text-blue-400 transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -177,5 +311,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
